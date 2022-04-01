@@ -3,9 +3,13 @@
 .numbers {
   opacity: 0;
   animation: show-numbers 10ms forwards $animation-time,
-    fade-up $animation-time forwards calc(2.5 * $animation-time);
+    fade-up $animation-time forwards calc(2.5 * $animation-time),
+    photos-changer 5000ms forwards step-end calc($animation-time);
   position: relative;
   top: 30vh;
+  width: 300px;
+  height: 170px;
+  // background-size: 750px 500px;
 }
 
 @keyframes show-numbers {
@@ -26,5 +30,81 @@
   }
   100% {
     top: 50px;
+  }
+}
+
+@keyframes photos-changer {
+  0% {
+    background-image: url('../../../../assets/img/1.png');
+    background-size: contain;
+  }
+  20% {
+    background-image: url('../../../../assets/img/2.png');
+    background-size: contain;
+  }
+  35% {
+    background-image: url('../../../../assets/img/3.png');
+    background-size: contain;
+  }
+  45% {
+    background-image: url('../../../../assets/img/4.png');
+    background-size: contain;
+  }
+  52% {
+    background-image: url('../../../../assets/img/5.png');
+    background-size: contain;
+  }
+  60% {
+    background-image: url('../../../../assets/img/6.png');
+    background-size: contain;
+  }
+  66% {
+    background-image: url('../../../../assets/img/7.png');
+    background-size: contain;
+  }
+  71% {
+    background-image: url('../../../../assets/img/8.png');
+    background-size: contain;
+  }
+  75% {
+    background-image: url('../../../../assets/img/9.png');
+    background-size: contain;
+  }
+  79% {
+    background-image: url('../../../../assets/img/10.png');
+    background-size: contain;
+  }
+  82% {
+    background-image: url('../../../../assets/img/11.png');
+    background-size: contain;
+  }
+  85% {
+    background-image: url('../../../../assets/img/12.png');
+    background-size: contain;
+  }
+  88% {
+    background-image: url('../../../../assets/img/13.png');
+    background-size: contain;
+  }
+  91% {
+    background-image: url('../../../../assets/img/14.png');
+    background-size: contain;
+  }
+  94% {
+    background-image: url('../../../../assets/img/15.png');
+    background-size: contain;
+  }
+  96% {
+    background-image: url('../../../../assets/img/16.png');
+    background-size: contain;
+  }
+  98% {
+    background-image: url('../../../../assets/img/17.png');
+    background-size: contain;
+  }
+
+  100% {
+    background-image: url('../../../../assets/img/17.png');
+    background-size: contain;
   }
 }
