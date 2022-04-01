@@ -1,3 +1,4 @@
-export * from './Logo';
-export * from './Numbers';
-export * from './Title';
+export * from './ArticlesList';
+export * from './Footer';
+export * from './Header';
+export * from './ContentHeader';

@@ -1,0 +1,17 @@
+.content-wrapper {
+  opacity: 0;
+  animation: show-content 1000ms forwards /* 5000ms */;
+  height: 0;
+}
+
+@keyframes show-content {
+  0% {
+    height: 100%;
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

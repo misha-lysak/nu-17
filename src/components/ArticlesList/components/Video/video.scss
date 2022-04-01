@@ -1,0 +1,14 @@
+@import 'src/variables.scss';
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 17px solid white;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+img {
+  aspect-ratio: 560/ 315;
+}

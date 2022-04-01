@@ -1,0 +1,12 @@
+@import 'src/variables.scss';
+
+.article-wrapper {
+  &:last-of-type {
+    .date {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+}

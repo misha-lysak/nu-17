@@ -1,0 +1,30 @@
+@import 'src/variables.scss';
+
+.numbers {
+  opacity: 0;
+  animation: show-numbers 10ms forwards $animation-time,
+    fade-up $animation-time forwards calc(2.5 * $animation-time);
+  position: relative;
+  top: 30vh;
+}
+
+@keyframes show-numbers {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    top: 30vh;
+  }
+  15% {
+    top: 30vh;
+  }
+  100% {
+    top: 50px;
+  }
+}
