@@ -17,7 +17,7 @@ const Article: React.FC<ArticleProps> = ({ item }) => {
           alt={item.img}
         />
       </div>
-      <article className="mx-7 md:mx-0 article before:content[''] py-6 pl-5 md:pl-10 before:w-1 before:h-full before:absolute before:bg-slate-500 before:-left-0 flex flex-col items-center max-w-[570px] relative justify-center">
+      <article className="mx-7 md:mx-auto article before:content[''] py-6 pl-5 md:pl-10 before:w-1 before:h-full before:absolute before:bg-slate-500 before:-left-0 flex flex-col items-center max-w-[570px] relative justify-center">
         <p className="date absolute -left-4 py-3 bg-white top-8 text-red-700 font-bold text-lg whitespace-pre-wrap w-min flex flex-col items-center justify-center">
           {item.date.split(' ').map((dateItem: string, id: number) => (
             <span key={id} className="leading-5">
