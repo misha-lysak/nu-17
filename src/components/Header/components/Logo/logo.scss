@@ -1,10 +1,13 @@
 @import 'src/variables.scss';
 
+.logo-img {
+  position: relative;
+  top: 50vh;
+}
+
 .logo {
   .logo-img {
-    position: relative;
-    top: 50px;
-    animation: fade-up $animation-time;
+    animation: fade-up $animation-time forwards;
   }
 }
 

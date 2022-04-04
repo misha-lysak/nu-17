@@ -2,14 +2,19 @@
 
 .numbers {
   opacity: 0;
-  animation: show-numbers 10ms forwards $animation-time,
-    fade-up $animation-time forwards calc(2.5 * $animation-time),
-    photos-changer 5000ms forwards step-end calc($animation-time);
+  animation: show-numbers 10ms forwards $animation-time;
+  // fade-up $animation-time forwards;
+  // photos-changer 5000ms forwards step-end calc($animation-time);
   position: relative;
   top: 30vh;
   width: 300px;
   height: 170px;
   // background-size: 750px 500px;
+}
+
+.fade-up {
+  opacity: 1;
+  animation: fade-up $animation-time forwards;
 }
 
 @keyframes show-numbers {
