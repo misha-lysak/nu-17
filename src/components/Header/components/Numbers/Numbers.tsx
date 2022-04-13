@@ -38,11 +38,6 @@ const Numbers: React.FC<{ images: HTMLImageElement[] }> = ({ images }) => {
       />
     </div>
   );
-  // return (
-  //   <>
-  //     <div className="numbers flex justify-center  align-bottom items-end pt-16 mx-auto" />
-  //   </>
-  // );
 };
 
 export { Numbers };
